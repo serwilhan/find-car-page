@@ -1,0 +1,188 @@
+/* Tablet */
+/* @media screen and (max-width: 768px) {
+  nav ul {
+  }
+} */
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+  /** Navbar **/
+  /* nav .logo {
+    width: 100px;
+    height: 34px;
+    background-color: #0d28a6;
+  } */
+
+  nav ul {
+    height: 100vh;
+    width: 50%;
+    background-color: white;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    flex-direction: column;
+    justify-content: flex-start;
+
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  nav ul li {
+    margin-left: 15px;
+    margin-bottom: 16px;
+  }
+
+  .bcr a {
+    display: inline-block;
+    margin-top: 32px;
+    font-weight: bold;
+  }
+
+  /* Hamburger Menu */
+  .menu-toggle {
+    display: flex;
+  }
+  /** End Navbar **/
+
+  /** HERO **/
+  #hero {
+    height: 100vh;
+  }
+  .hero__desc {
+    margin-bottom: 248px;
+  }
+
+  .hero__image img {
+    width: 95%;
+    height: auto;
+  }
+
+  /** End HERO **/
+
+  /** OUR SERVICE **/
+  #services {
+    margin-top: 61px;
+  }
+
+  .service__desc {
+    margin-top: 32px;
+  }
+
+  .service__desc h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .service__img img {
+    width: 100%;
+  }
+  /** End OUR SERVICE **/
+
+  /** WHYUS **/
+  #why-us {
+    margin-top: 164px;
+  }
+  .whyus-title p:nth-child(1) {
+    font-size: 24px !important;
+    margin-bottom: 16px !important;
+  }
+  .whyus-title p {
+    margin-bottom: 26px !important;
+  }
+
+  .whyus-card {
+    max-width: 100%;
+    height: 176px;
+    margin-bottom: 16px;
+  }
+
+  .whyus-card__body {
+    flex-direction: column;
+  }
+  /** End WHYUS **/
+
+  /** TESTIMONIAL **/
+  .testimonial__text {
+    margin: 45px auto 40px;
+  }
+  .flickity-prev-next-button.previous {
+    left: 35.5% !important;
+  }
+
+  .flickity-prev-next-button.next {
+    position: relative;
+    left: 36.5% !important;
+    top: 45px;
+  }
+  /** End of TESTIMONIAL **/
+
+  /** CTA BANNER **/
+
+  /** CTA BANNER **/
+  .banner {
+    height: 400px;
+  }
+
+  .banner-body {
+    width: 212px;
+    height: auto;
+    margin-left: auto;
+  }
+
+  .banner__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .banner__text {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  /** End CTA BANNER **/
+
+  /** FAQ **/
+  .faq__title h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  /** End FAQ **/
+
+  /** FOOTER **/
+  footer {
+    height: 183px;
+    margin-top: 45px;
+  }
+
+  .footer__address p {
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+
+  footer ul li {
+    margin-bottom: 20px;
+    /* font-weight: 600; */
+  }
+
+  .footer__brand {
+    padding: 0 !important;
+  }
+
+  .footer__brand p {
+    margin: 20px 0;
+  }
+
+  .footer__brand .footer__logo {
+    margin-bottom: 60px;
+  }
+  /** End FOOTER **/
+}

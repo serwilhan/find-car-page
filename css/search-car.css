@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
+
+/** Car Filter **/
+.car-filter {
+  background-color: #ffffff;
+  width: 1047px;
+  height: 106px;
+  padding: 0px;
+  margin: 100px auto 0;
+  z-index: 1;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.15);
+}
+
+.car-filter .form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  margin: 0;
+  font-family: 'Rubik';
+  font-size: 12px;
+}
+
+.car-filter .form div label {
+  margin-bottom: 4px;
+}
+
+.car-filter .form .cari-mobil__btn input {
+  background-color: #5cb85f;
+  color: white;
+  width: 92px;
+  height: 36px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+}
+
+.car-filter .form .cari-mobil__btn input:hover {
+  background-color: #4a944d;
+}
+
+/* input */
+.car-filter .input__field {
+  width: 210.75px;
+  height: 36px;
+  padding: 9px 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.car-filter .input__field input {
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #8a8a8a;
+  border: none;
+}
+
+.car-filter .input__field input:focus {
+  outline: none;
+}
+
+.car-filter .input__field img {
+  margin-left: 8px;
+  color: #8a8a8a;
+}
+
+/* .car-filter select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+} */
+
+/* Select Box */
+.car-filter .select-box {
+  width: 210.75px;
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.car-filter .select-box .options-container {
+  width: 100%;
+  color: #3c3c3c;
+  font-family: 'Rubik', sans-serif;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  order: 1;
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 10%);
+}
+
+.car-filter .select-box .options-container.active {
+  overflow: visible;
+  max-height: fit-content;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.car-filter .select-box .option,
+.car-filter .select-box .selected {
+  cursor: pointer;
+}
+
+.car-filter .select-box .option label {
+  margin: 0;
+}
+
+.car-filter .select-box .selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Helvetica, sans-serif;
+  height: 36px;
+  padding: 9px 12px;
+  border: 1px solid #d0d0d0;
+
+  border-radius: 2px;
+  margin-bottom: 4px;
+  order: 0;
+}
+
+.car-filter .select-box .options-container.active + .selected {
+  border: 1px solid #5cb85f;
+  transition: all 0.5s;
+}
+
+.car-filter .select-box .options-container.active + .selected img {
+  transform: rotateX(180deg);
+}
+
+.car-filter .select-box .option {
+  height: 38px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.car-filter .select-box .option:hover {
+  background-color: #c9e7ca;
+  color: #5cb85f;
+  font-weight: 500;
+}
+
+.car-filter .select-box .option .radio {
+  display: none;
+}
+
+/** /Car Filter**/
+
+#search-result {
+  display: flex;
+  justify-content: space-between;
+  width: 1047px;
+
+  margin: 80px auto 0;
+}
+
+#search-result .card {
+  padding: 24px;
+}
+
+#search-result .card-body {
+  padding: 0;
+}
+
+#search-result .card .card-body p {
+  margin-bottom: 8px;
+}
+
+#search-result .card .list-group,
+#search-result .card .list-group .list-group-item {
+  padding-left: 0;
+  padding-left: 0;
+  border: none;
+}
+
+#search-result .card .search-card__button {
+  width: 285px;
+  height: 48px;
+  background-color: #5cb85f;
+  border: none;
+  line-height: 37px;
+  font-size: 14px;
+  font-weight: bold;
+}
